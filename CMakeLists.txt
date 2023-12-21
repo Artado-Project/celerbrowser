@@ -26,7 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(celerbrowser
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        tab.h tab.cpp
+
         httpreq.h httpreq.cpp
 
 
