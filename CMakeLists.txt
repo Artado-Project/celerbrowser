@@ -12,13 +12,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Network)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Network)
 
-set(TS_FILES celerbrowser_en_GB.ts)
+set(TS_FILES /translations/celerbrowser_en_GB.ts)
 
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+
         ${TS_FILES}
 )
 
@@ -59,7 +60,7 @@ target_link_libraries(celerbrowser PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.celerbrowser)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.artado.celerbrowser)
 endif()
 set_target_properties(celerbrowser PROPERTIES
     ${BUNDLE_ID_OPTION}
