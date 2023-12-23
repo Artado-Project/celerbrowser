@@ -12,13 +12,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Network)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Network)
 
-set(TS_FILES /translations/celerbrowser_en_GB.ts)
+set(TS_FILES translations/celerbrowser_en_GB.ts)
 
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+        src/main.cpp
+        src/mainwindow.cpp
+        src/mainwindow.h
+        src/mainwindow.ui
 
         ${TS_FILES}
 )
@@ -28,7 +28,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
 
-        httpreq.h httpreq.cpp
+        src/httpreq.cpp src/httpreq.h src/main.cpp src/mainwindow.cpp src/mainwindow.h src/mainwindow.ui
+        src/httpreq.cpp src/httpreq.h src/main.cpp src/mainwindow.cpp src/mainwindow.h src/mainwindow.ui
 
 
     )
