@@ -1,2 +1,2 @@
-# celerbrowser
- Celer Browser is a fast, private and customizable browser
+# Celer Browser
+ Celer Browser is currently under development.
