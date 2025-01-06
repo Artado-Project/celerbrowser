@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/newtab.html</file>
+        <file>resources/background.jpg</file>
+        <file>resources/go-next-symbolic.svg</file>
+        <file>resources/style.css</file>
+    </qresource>
+</RCC>

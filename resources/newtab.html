@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeni Sekme</title>
+  <link rel="stylesheet" href="celer://style.css">
+</head>
+<body>
+  <main>
+    <div class="main">
+      <div class="headerbar">
+        <span id="clock"></span>
+        <div class="search">
+          <form action="https://www.artadosearch.com/search" autocomplete="off">
+            <input type="text" name="i" id="i" placeholder="Artado'da arama yapın...">
+          </form>
+        </div>
+      </div>
+      <div class="sites">
+        <a href="https://web.whatsapp.com" class="site green">
+          <span>WhatsApp Web</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://discord.com/app" class="site blue">
+          <span>Discord</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://teteos.net" class="site orange">
+          <span>TeTeOS.Net</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://thisweek.gnome.org" class="site gnome">
+          <span>GNOME'da bu hafta</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://reddit.com/r/gnome" class="site orange">
+          <span>GNOME Reddit</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://github.com" class="site">
+          <span>GitHub</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://youtube.com" class="site red">
+          <span>YouTube</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://mail.vuhuv.com" class="site blue">
+          <span>Vuhuv E-posta</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://silicone-forum.com" class="site blue">
+          <span>Silicone</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <a href="https://eba.gov.tr" class="site red">
+          <span>Eğitim Bilişim Ağı</span>
+          <img src="celer://go-next-symbolic.svg" alt="">
+        </a>
+        <p style="color:#afafaf; margin: 10px;">Resim: Pavel Ogar, Unsplash</p>
+    </div>
+  </main>
+  <script>
+function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+
+  hh = (hh < 10) ? "0" + hh : hh;
+  mm = (mm < 10) ? "0" + mm : mm;
+    
+  let time = hh + ":" + mm;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+
+currentTime();
+  </script>
+</body>
+</html>
+
